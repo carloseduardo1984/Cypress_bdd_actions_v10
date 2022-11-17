@@ -1,0 +1,5 @@
+Inicio:
+
+npm install cypress@10.9.0
+npm test
+npx cypress open

@@ -1,0 +1,115 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "001_Check_Environments_OSAI",
+    "line": 2,
+    "id": "001_check_environments_osai",
+    "tags": [
+      {
+        "name": "@RegressionTest",
+        "line": 1
+      }
+    ],
+    "uri": "01_Env_checks.feature",
+    "elements": [
+      {
+        "id": "001_check_environments_osai;001_check_environments_osai",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "001_Check_Environments_OSAI",
+        "tags": [
+          {
+            "name": "@RegressionTest",
+            "line": 1
+          },
+          {
+            "name": "@vw-wl-int",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an access as \"Volkswagen\"",
+            "result": {
+              "status": "passed",
+              "duration": 5753000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I do the selection on product list for \"Volkswagen Polo\"",
+            "result": {
+              "status": "passed",
+              "duration": 7911000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "check if the recommendation carrousel is available and save the environment status",
+            "result": {
+              "status": "passed",
+              "duration": 55000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "001_check_environments_osai;001_check_environments_osai",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "001_Check_Environments_OSAI",
+        "tags": [
+          {
+            "name": "@RegressionTest",
+            "line": 1
+          },
+          {
+            "name": "@vw-wl-int",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an access as \"Volkswagen\"",
+            "result": {
+              "status": "passed",
+              "duration": 7100000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I do the selection on product list for \"Up!\"",
+            "result": {
+              "status": "passed",
+              "duration": 7363000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "check if the recommendation carrousel is available and save the environment status",
+            "result": {
+              "status": "passed",
+              "duration": 62000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
