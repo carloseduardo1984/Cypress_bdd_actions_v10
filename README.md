@@ -5,7 +5,7 @@ FAÇA O git clone:
 
 No terminal dentro da pasta do projeto insira na sequencia abaixo:
 
-> ´´´npm install cypress@10.9.0´´´
+> `npm install cypress@10.9.0
 
 > ´´´npm test´
 > 
