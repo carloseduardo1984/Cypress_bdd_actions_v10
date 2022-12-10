@@ -22,5 +22,5 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "16"
-      - run: npm install && npm test
-      - run: npm test --browser=chrome configFile=qa --record --parallel --key=${{ secrets.RECORD_KEY }} || npm run posttest
+      - run: npm install 
+      - run: npx cypress run --browser=chrome --record --parallel --key=${{ secrets.RECORD_KEY }} || npx run posttest
