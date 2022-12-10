@@ -22,5 +22,5 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "16"
-      - run: npm i cypress@10.9.0 && npm install && ${{ secrets.RUN_COMMAND }}
+      - run: npm i cypress@10.9.0 && npm install 
       - run: npx cypress run --browser=chrome configFile=qa --record --parallel --key=${{ secrets.RECOVERY_KEY }
