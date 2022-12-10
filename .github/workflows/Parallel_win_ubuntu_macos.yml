@@ -23,8 +23,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm i cypress@10.9.0 && npm install
-      - run: npm cypress run --browser=chrome || node cucumber-html-report.js           
+      - run: npm i cypress@10.9.0 && npm install && npx cypress open  
+      - run: npm test           
         env:          
            CYPRESS_RECORD_KEY: ${{ secrets.RECORD_KEY }}
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
