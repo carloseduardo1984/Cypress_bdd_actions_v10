@@ -22,5 +22,5 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "16"
-      - run: npm install 
-      - run: npm run scripts --browser=chrome configFile=qa --record --parallel --key=${{ secrets.RECORD_KEY }} || npm run posttest
+      - run: npm install && npm test
+      - run: npm test --browser=chrome configFile=qa --record --parallel --key=${{ secrets.RECORD_KEY }} || npm run posttest
