@@ -24,8 +24,8 @@ jobs:
         with:
           node-version: 16
       - run: npm i cypress@10.9.0 && npm install 
-      - run: npx cypress run --group 1x-chrome --browser chrome --parallel || node cucumber-html-report.js   
-      - run: npx cypress run --group 3x-firefox --browser chrome --parallel || node cucumber-html-report.js  
+      - run: npx cypress run --group 1x-chrome --browser=chrome --parallel || node cucumber-html-report.js   
+      - run: npx cypress run --group=1x-chrome --browser=chrome --parallel || node cucumber-html-report.js  
           
         env:          
            CYPRESS_RECORD_KEY: ${{ secrets.RECORD_KEY }}
