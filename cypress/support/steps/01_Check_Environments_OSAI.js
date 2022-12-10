@@ -10,10 +10,8 @@ Given('an access as {string}', (brand) => {
 
 
     cy.viewport(1920,1080)
-    cy.log('Screen resized 1920x1080 *')
-
+    cy.log('Screen resized 1920x1080 *')   
     
-    Introd.selectIntro(brand)
 
      cy.log('Select Done !!! **********')
 
@@ -21,11 +19,10 @@ Given('an access as {string}', (brand) => {
 
 When('I do the selection on product list for {string}', (car) => {
 
-    Introd.selectNetworkData(car);
-  
+   
 
         cy.log('CAROUSEL LOADED... ');
-        cy.log(statusList);
+        
 
 });
 
