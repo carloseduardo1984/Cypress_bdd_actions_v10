@@ -7,7 +7,7 @@ module.exports = defineConfig({
     openMode: 0,
   },
   video: false,
-  screenshotOnRunFailure: true,
+  screenshotOnRunFailure: false,
   experimentalFetchPolyfill: false,
   defaultCommandTimeout: 3000,
   e2e: {
