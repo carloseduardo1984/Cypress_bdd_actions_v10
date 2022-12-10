@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm install
+      - run: npm i cypress@10.9.0 && npm install
       - run: npm test   
         env:          
            CYPRESS_RECORD_KEY: ${{ secrets.RECORD_KEY }}
